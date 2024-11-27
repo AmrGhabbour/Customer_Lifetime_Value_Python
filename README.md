@@ -5,15 +5,11 @@ This project uses machine learning techniques and the **lifetimes** Python libra
 ## Table of Contents
 
 - [Project Overview](#project-overview)
-- [Installation Instructions](#installation-instructions)
 - [Data Description](#data-description)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
 - [Model Building](#model-building)
 - [Results](#results)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
@@ -33,36 +29,7 @@ The project also segments customers based on their CLV and transaction behavior 
 4. **Customer Segmentation**: Using **KMeans clustering** to segment customers based on their predicted CLV and transaction behavior.
 5. **Visualization**: Boxplots and clustering visualizations to show the distribution of CLV across different segments.
 
-## Installation Instructions
 
-Follow these steps to set up the project locally:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/AmrGhabbour/Customer_Lifetime_Value.git
-   cd clv-prediction
-   ```
-
-2. **Create a virtual environment**:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-
-3. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Download the dataset**:
-   - Place the `sales_transactions.csv` file in the `data/` directory.
-   - The dataset should contain transaction data for each customer.
-
-5. **Run the project**:
-   - To predict the CLV and perform customer segmentation, run the script:
-   ```bash
-   python Customer_LifeTime_Value.pynb
-   ```
 
 ## Data Description
 
@@ -94,27 +61,6 @@ invoice000003      2023-10-23 04:43:19     CUST04110     23.6       4036.81
 - **scikit-learn** for KMeans clustering and model evaluation.
 - **yellowbrick** for visualizing the KMeans clustering elbow method.
 
-## Project Structure
-
-```
-clv-prediction/
-│
-├── data/                      # Directory for the sales transaction data
-│   └── sales_transactions.csv  # Example sales transaction data file
-│
-├── notebooks/                 # Jupyter notebooks for exploratory analysis
-│   └── data_exploration.ipynb # Notebook for data exploration and visualization
-│
-├── src/                       # Source code
-│   ├── Customer_LifeTime_Value.pynb           # Main model building and training script
-│   ├── data_preprocessing.py  # Functions for cleaning and preprocessing the data
-│   ├── clustering.py          # Functions for customer segmentation (KMeans)
-│   └── utils.py               # Helper functions
-│
-├── requirements.txt           # Python libraries required for the project
-├── README.md                  # This file
-└── LICENSE                    # License file
-```
 
 ## Model Building
 
