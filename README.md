@@ -39,7 +39,7 @@ Follow these steps to set up the project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/clv-prediction.git
+   git clone https://github.com/AmrGhabbour/Customer_Lifetime_Value.git
    cd clv-prediction
    ```
 
@@ -61,7 +61,7 @@ Follow these steps to set up the project locally:
 5. **Run the project**:
    - To predict the CLV and perform customer segmentation, run the script:
    ```bash
-   python clv_model.py
+   python Customer_LifeTime_Value.pynb
    ```
 
 ## Data Description
@@ -106,7 +106,7 @@ clv-prediction/
 │   └── data_exploration.ipynb # Notebook for data exploration and visualization
 │
 ├── src/                       # Source code
-│   ├── clv_model.py           # Main model building and training script
+│   ├── Customer_LifeTime_Value.pynb           # Main model building and training script
 │   ├── data_preprocessing.py  # Functions for cleaning and preprocessing the data
 │   ├── clustering.py          # Functions for customer segmentation (KMeans)
 │   └── utils.py               # Helper functions
